@@ -23,20 +23,21 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         Pemain pemain = new Pemain();
 
-        System.out.print("Masukkan nama pemain: ");
+        System.out.print("Nama pemain: ");
         pemain.nama = scanner.nextLine();
 
         String[] soal = {
             "Berapa hasil dari 2 + 5?",
             "Berapa hasil dari 8 x 5?",
             "Berapa hasil dari 12 / 4?",
-            "Berapa hasil dari 15 - 10?"
+            "Berapa hasil dari 15 - 10?",
+            "Berapa hasil dari 2^2 ? "
         };
-        int[] jawaban = {7, 40, 3, 5};
+        int[] jawaban = {7, 40, 3, 5, 4};
 
         for (int i = 0; i < soal.length; i++) {
             System.out.println("Level " + (i + 1) + ": " + soal[i]);
-            System.out.print("Jawaban: ");
+            System.out.print("Answer: ");
             int jawabanPemain = scanner.nextInt();
 
             if (jawabanPemain == jawaban[i]) {
