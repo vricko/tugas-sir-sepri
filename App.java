@@ -27,12 +27,12 @@ public class App {
         pemain.nama = scanner.nextLine();
 
         String[] soal = {
-            "Berapa hasil dari 2 + 2?",
-            "Berapa hasil dari 5 x 5?",
+            "Berapa hasil dari 2 + 5?",
+            "Berapa hasil dari 8 x 5?",
             "Berapa hasil dari 12 / 4?",
-            "Berapa hasil dari 15 - 7?"
+            "Berapa hasil dari 15 - 10?"
         };
-        int[] jawaban = {4, 25, 3, 8};
+        int[] jawaban = {7, 40, 3, 5};
 
         for (int i = 0; i < soal.length; i++) {
             System.out.println("Level " + (i + 1) + ": " + soal[i]);
